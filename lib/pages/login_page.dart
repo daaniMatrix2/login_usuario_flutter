@@ -14,28 +14,23 @@ class _LoginPageState extends State<LoginPage> {
   String? _errorMessage;
 
   final List<Map<String, String>> _users = [
-    {
-      "email": "daniel@email.com",
-      "password": "123"
-    }
+    {"email": "daniel@email.com", "password": "1234"},
   ];
 
   void _login() {
     if (_formKey.currentState!.validate()) {
       final email = _emailController.text;
       final password = _passwordController.text;
-      
+
       try {
         final userExists = _users.any(
-          (user) => user["email"] == email && user["password"] == password
+          (user) => user["email"] == email && user["password"] == password,
         );
 
         if (userExists) {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => const WelcomePage(),
-            ),
-          );
+          Navigator.of(
+            context,
+          ).push(MaterialPageRoute(builder: (context) => const WelcomePage()));
         } else {
           setState(() {
             _errorMessage = 'Usuário ou senha incorretos!';
@@ -52,10 +47,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login'),
-        backgroundColor: Colors.blue,
-      ),
+      appBar: AppBar(title: const Text('Login'), backgroundColor: Colors.blue),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Form(
@@ -91,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                   return null;
                 },
               ),
-              
+
               if (_errorMessage != null)
                 Padding(
                   padding: const EdgeInsets.only(top: 16),
@@ -106,10 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(200, 50),
                 ),
-                child: const Text(
-                  'Entrar',
-                  style: TextStyle(fontSize: 18),
-                ),
+                child: const Text('Entrar', style: TextStyle(fontSize: 18)),
               ),
             ],
           ),
@@ -133,18 +122,11 @@ class WelcomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.check_circle_outline,
-              size: 100,
-              color: Colors.green,
-            ),
+            Icon(Icons.check_circle_outline, size: 100, color: Colors.green),
             SizedBox(height: 20),
             Text(
               'Bem-vindo!',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
           ],
         ),
