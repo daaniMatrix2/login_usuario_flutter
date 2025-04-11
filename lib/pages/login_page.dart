@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
   String? _errorMessage;
 
   final List<Map<String, String>> _users = [
-    {"email": "daniel@email.com", "password": "12345"},
+    {"email": "daniel@email.com", "password": "1234"},
   ];
 
   void _login() {
