@@ -21,28 +21,28 @@ Este projeto foi construído com **FastAPI** no backend e **SQLite** como banco 
 ### 🟢 Tela Inicial
 Aqui o usuário visualiza um resumo geral dos gastos do mês e do ano.
 
-![Tela Inicial](./controle_de_gasto1.jpeg)
+![Tela Inicial](./controle_de_gasto1.jpg)
 
 ---
 
 ### 📝 Aba de Gastos
 Permite registrar novos gastos, consultar por categoria, mês ou ano e visualizar valores totais.
 
-![Aba Gastos](./controle_de_gasto5.jpeg)
+![Aba Gastos](./controle_de_gasto5.jpg)
 
 ---
 
 ### ⚙️ Configurações
 Nesta seção o usuário pode cadastrar e editar categorias, além de configurar preferências da aplicação.
 
-![Tela Configurações](./controle_de_gasto7.jpeg)
+![Tela Configurações](./controle_de_gasto7.jpg)
 
 ---
 
 ### 🔐 Tela de Login
 Tela inicial de autenticação simples para proteger o acesso aos dados financeiros.
 
-![Tela Login](./controle_de_gasto8.jpeg)
+![Tela Login](./controle_de_gasto8.jpg)
 
 ---
 
