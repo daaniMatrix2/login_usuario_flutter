@@ -1,16 +1,60 @@
-# primeiro_app
+# 💸 App de Controle de Gastos
 
-A new Flutter project.
+Aplicação desenvolvida para **gerenciamento financeiro pessoal**, com foco em organização dos **gastos mensais e anuais**, categorização de despesas e controle detalhado dos registros.
 
-## Getting Started
+Este projeto foi construído com **FastAPI** no backend e **SQLite** como banco de dados principal, garantindo leveza, praticidade e fácil integração local.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🔧 Tecnologias Utilizadas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **FastAPI** — API leve, rápida e fácil de manter
+- **SQLite** — Banco de dados local e eficiente
+- **Pydantic** — Validação de dados
+- **SQLAlchemy** — ORM para modelagem das tabelas
+- **Python 3.11+**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📷 Imagens da Aplicação
+
+### 🟢 Tela Inicial
+Aqui o usuário visualiza um resumo geral dos gastos do mês e do ano.
+
+![Tela Inicial](./controle_de_gasto1.jpeg)
+
+---
+
+### 📝 Aba de Gastos
+Permite registrar novos gastos, consultar por categoria, mês ou ano e visualizar valores totais.
+
+![Aba Gastos](./controle_de_gasto5.jpeg)
+
+---
+
+### ⚙️ Configurações
+Nesta seção o usuário pode cadastrar e editar categorias, além de configurar preferências da aplicação.
+
+![Tela Configurações](./controle_de_gasto7.jpeg)
+
+---
+
+### 🔐 Tela de Login
+Tela inicial de autenticação simples para proteger o acesso aos dados financeiros.
+
+![Tela Login](./controle_de_gasto8.jpeg)
+
+---
+
+## 🧠 Funcionalidades
+
+- Cadastro de categorias personalizadas
+- Registro de gastos com valor, descrição, data e categoria
+- Filtros por mês, ano e categoria
+- Dashboard com resumo financeiro
+- Autenticação básica (futura integração com JWT ou OAuth2)
+
+---
+
+## 🗂️ Estrutura do Projeto (Backend)
+
